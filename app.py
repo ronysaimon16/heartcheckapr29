@@ -24,5 +24,24 @@ def predict():
 
     return render_template("index.html", prediction_text=prediction_text)
 
+
 if __name__ == "__main__":
     app.run(debug=True)
+    # Get the port number from the environment variable PORT or use 4000 as fallback
+    port = int(os.environ.get("PORT", 4000))
+    app.run(host='0.0.0.0', port=port)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
